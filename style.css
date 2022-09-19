@@ -1,0 +1,1010 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif */
+
+/* font-family */
+
+
+/* 전체 설정 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+/* LandingPage 메뉴 설정 */
+
+.LandingPage {}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+
+
+
+}
+
+header h1 {
+    background-image: url(img/main_logo.png);
+    width: 303px;
+    height: 80px;
+    text-indent: -9999px;
+}
+
+.Util {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+
+}
+
+.Util li {
+    padding: 0px 10px;
+    color: #131313;
+    font-size: 14px;
+}
+
+.Gnb {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 80px;
+    background-color: #34B27C;
+    margin-top: 5px;
+    padding: 0px 200px;
+
+}
+
+.Gnb li a {
+    color: #fff;
+    font-size: 22px;
+}
+
+.Gnb li a:hover {
+    opacity: 0.8;
+}
+
+.LandingBanner.on {
+    display: none;
+}
+
+
+/* LandingPage > Banner 설정 */
+
+
+.LandingBanner {
+    background-image: url(img/landing_bg1.png);
+    width: 100%;
+    height: 900px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.LandingBanner .Landing_img {
+    width: 35%;
+
+}
+
+.Landing_img img {
+    width: 687.25px;
+    height: 794.01px;
+}
+
+.LandingBanner .LandingTxt {
+    width: 30%;
+    margin-bottom: 310px;
+    margin-left: 10px;
+
+}
+
+/* .LandingTxt .SlideBtn {
+    display: flex;
+
+}
+
+.SlideBtn li {
+    padding-right: 10px;
+}
+
+.SlideBtn li a {
+    text-indent: -9999em;
+    background-image: url(img/slide_btn.png);
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-top: 30px;
+
+} */
+
+.LandingTxt h2 {
+    font-size: 42px;
+    color: #2C2C2C;
+
+}
+
+.LandingTxt p {
+    font-size: 24px;
+    color: #2c2c2c;
+    margin-top: 30px;
+    letter-spacing: 1.6px;
+}
+
+
+
+/* SlideBtn 만들기 */
+
+/* 배너 오른쪽 Info 설정 */
+
+.LandingBanner .LandingInfo {
+    width: 35%;
+    background-color: #fff;
+    width: 636px;
+    height: 680px;
+
+    margin-bottom: 30px;
+    margin-right: 20px;
+    border-radius: 20px;
+
+
+}
+
+.LandingInfo .notice {
+    width: 586px;
+    height: 250px;
+    background-color: #34B27C;
+    margin-top: 28px;
+    margin-left: 20px;
+
+
+
+}
+
+.notice h3 {
+    color: #fff;
+    margin-left: 13px;
+    padding-top: 10px;
+}
+
+.notice .notice_txt {
+    width: 560px;
+    height: 178px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 13px;
+
+}
+
+.notice_txt span {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+
+.notice_txt span h4 {
+    font-size: 22px;
+
+}
+
+.notice_txt span p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+.notice_txt>p {
+    padding: 5px 15px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    -ms-text-underline-offset: 4px;
+    -webkit-text-underline-offset: 4px;
+    -moz-text-underline-offset: 4px;
+
+    color: #747474;
+
+
+}
+
+.notice_txt a {
+    display: block;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+
+
+.weather {
+    width: 586px;
+    height: 220px;
+    background-color: #34B27C;
+
+    margin-top: 12px;
+    margin-left: 20px;
+
+}
+
+.weather h3 {
+    color: #fff;
+    margin-left: 13px;
+    padding-top: 10px;
+}
+
+.weather .weatherImg {
+    text-align: center;
+    padding: 5px;
+}
+
+.weatherImg img {
+    padding: 0px 13px;
+}
+
+.reservation {
+    width: 586px;
+    height: 130px;
+    background-color: #34B27C;
+
+    margin-top: 12px;
+    margin-left: 20px;
+}
+
+.reservation h3 {
+    color: #fff;
+    margin-left: 13px;
+    padding-top: 10px;
+}
+
+
+.reservationBtn {
+    text-align: center;
+
+
+}
+
+.reservationBtn select, input {
+    width: 150px;
+    height: 60px;
+}
+
+
+/* 추천 코스 설정 recommand */
+
+
+
+
+.recommand>span {
+    display: block;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.recommand>span h2 {
+    font-size: 48px;
+
+}
+
+.recommand>span p {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    color: #1d1d1d;
+}
+
+.recommand_banner {
+    width: 1920px;
+    height: 700px;
+
+
+    margin-top: 80px;
+    background-image: url(img/recommand_bg.png);
+    background-size: cover;
+
+    /* opacity: 1; */
+   
+
+
+
+
+
+   
+}
+
+
+
+.recommand_banner>div.on {
+    display: block;
+}
+
+
+
+.recommand_banner>div {
+    width: 1920px;
+    height: 700px;
+
+
+
+    display: none;
+
+}
+
+/* 0번 
+.recommand_banner > div:nth-child(1) {
+    
+    float: left;
+    
+}
+
+.recommand_banner > div:nth-child(1) h2 {
+    text-align: center;
+    
+}
+
+.recommand_banner > div:nth-child(1) img {
+    width: 50%;
+    height: auto;
+    
+    
+} */
+/* 금강 자연 휴양림 */
+.recommand_banner>div:nth-child(2) {
+
+    background-image: url(img/re1.png);
+    
+}
+
+/* 동물마을 */
+.recommand_banner div:nth-child(3) {
+
+    background-image: url(img/animalpark.png);
+   
+
+
+}
+
+.recommand_banner div:nth-child(3) h2 {
+
+    color: #fff;
+}
+
+/* 수목원 */
+.recommand_banner div:nth-child(4) {
+    background-image: url(img/re2.png);
+   
+}
+
+
+
+
+
+.recommand_banner ul {}
+
+.recommand_con1,
+.recommand_con2,
+.recommand_con3 {
+    position: relative;
+}
+
+
+.recommand_info {
+    width: 641px;
+    height: 513px;
+    background-color: #F5EBDD;
+    border-radius: 10%;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+
+}
+
+.recommand_info_btn {
+    width: 641px;
+    height: 80px;
+    border-bottom: 5px solid #fff;
+
+
+}
+
+.recommand_info_btn ul {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+.recommand_info_btn ul li {
+    padding: 25px 15px;
+    margin-right: 20px;
+}
+
+.recommand_info_btn ul a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-indent: -9999px;
+
+
+
+}
+
+.recommand_info>span {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.recommand_info>span a {
+    font-size: 28px;
+    color: #fff;
+    background-color: #F98638;
+
+    width: 250px;
+    height: 63px;
+    border-radius: 20px;
+
+    padding: 5px 20px;
+
+
+}
+
+.recommand_info>span p {
+    margin-top: 20px;
+}
+
+
+.title_btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.title_btn span {
+    padding: 0px 30px;
+}
+
+
+
+.title_btn span a {
+    font-size: 28px;
+    color: #fff;
+    background-color: #F98638;
+
+    width: 250px;
+    height: 63px;
+    border-radius: 20px;
+
+    padding: 5px 20px;
+
+}
+
+.title_btn span p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #1C1C1C;
+
+}
+
+.title_btn span a:hover {
+    opacity: 0.8;
+}
+
+
+
+/* 예약정보 설정 */
+
+.reservation_info_out {
+    margin-top: 150px;
+}
+
+.reservation_info_out > h3 {
+    font-size: 34px;
+    border-left: #00AA61 solid 10px;
+    color: #131313;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.reservation_info_out h4 {
+    font-size: 20px;
+    border-left: #00AA61 soild 3px;
+    color: #131313;
+    margin: 20px 0px;
+    margin-left: 50px;
+}
+
+.reservation_info {
+    width: 1440px;
+    height: 700px;
+    background-color: #99D4C7;
+}
+
+.reservation_info_inner {
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+    
+
+}
+
+
+
+.reservation_info_inner ul li {
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+
+
+
+.reservation_info_inner h3 li {
+  
+    background-image: url(img/carrot.png);
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    margin-left: 10px;
+    
+    
+
+
+
+}
+
+.reservation_info_inner h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.reservation_info_inner>div ul li {
+ 
+}
+
+.reservation_info_inner>div:nth-child(1) {
+    width: 645px;
+    height: 601px;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+
+.reservation_info_inner>div:nth-child(2) {
+
+
+    width: 645px;
+    height: 601px;
+
+
+}
+
+.review {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+.fna {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 618px;
+    height: 310px;
+    
+
+
+
+}
+
+
+
+.fna h3 li {
+   background: url(img/carrot.png);
+   background-repeat: no-repeat;
+    background-position: left 50%;
+   padding-left: 30px;
+   
+   margin-left: 10px;
+}
+
+.fna h4 {
+padding: 20px 0px 0px 0px;
+} 
+
+
+
+
+/* 프로그램 배치 */
+
+.program {
+    margin-top: 150px;
+}
+
+.program .program01 {
+    display: flex;
+}
+
+.program01 .program01_img {
+    width: 950px;
+    height: 551px;
+    /* background-color: #747474; */
+    margin-left: 130px;
+}
+
+.program01_img img {
+    width: 100%;
+}
+
+.program01 .program01_txt {
+    margin-left: 140px;
+}
+
+
+
+.program01_txt h3 {
+    font-size: 34px;
+}
+
+.program01 .program01_txt p {
+    margin-top: 20px;
+    letter-spacing: 1.4px;
+    line-height: 150%;
+}
+
+.program01 .program01_txt a {
+    background-color: #34B27C;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 215px;
+    height: 83px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.program .program02 {
+    display: flex;
+    flex-direction: row-reverse;
+
+    margin-top: 180px;
+}
+
+.program02 .program02_img {
+    width: 946px;
+    height: 781px;
+    /* background-color: #747474; */
+    margin-right: 130px;
+
+
+}
+
+.program02_img img {
+    width: 100%;
+}
+
+.program02 .program02_txt {
+    margin-right: 130px;
+}
+
+.program02 .program02_txt h3 {
+    font-size: 34px;
+}
+
+.program02 .program02_txt p {
+    margin-top: 20px;
+    letter-spacing: 1.4px;
+    line-height: 150%;
+}
+
+.program02 .program02_txt a {
+    background-color: #34B27C;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 215px;
+    height: 83px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* 유튜브 배치 */
+
+.vid h3 {
+    font-size: 34px;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    border-left: 10px solid #34B27C;
+    padding-left: 20px;
+}
+
+.vid>video {
+    width: 1920px;
+    height: auto;
+}
+
+.playlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.vid .playlist ul {
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    margin-top: 20px;
+    width: 1170px;
+    height: 190px;
+    overflow: hidden;
+
+}
+
+.vid .playlist ul li {
+    padding: 0px 20px;
+}
+
+.playlist video {
+    width: 350px;
+    height: 190px;
+}
+
+.vid h4 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+    color: #131313;
+}
+
+.playlist .playlist_left_btn {
+    background-image: url(img/btn1.png);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 26px;
+    text-indent: -9999px;
+
+
+
+}
+
+.playlist .playlist_right_btn {
+    background-image: url(img/btn2.png);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 26px;
+    text-indent: -9999px;
+
+}
+
+
+/* business 설정 */
+
+.business {
+    margin-top: 200px;
+
+}
+
+.business>h3 {
+    font-size: 34px;
+    border-left: 10px solid #34B27C;
+    padding-left: 20px;
+
+
+}
+
+.business>div>div {}
+
+
+.business .q {
+    display: flex;
+    margin-top: 40px;
+    border-bottom: 1px solid #eee;
+
+}
+
+.business .q>div {
+    width: 701px;
+    height: 468px;
+}
+
+
+.q_img1 {
+    width: 100%;
+}
+
+.business .q span {
+    margin-top: 160px;
+    margin-left: 30px;
+    color: #131313;
+
+}
+
+.q span h3 {
+    font-size: 34px;
+
+}
+
+.q span p {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    margin-top: 30px;
+}
+
+.business .a {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+
+.business .a div>img {
+    width: 199.5px;
+    height: 133px;
+    margin-bottom: 70px;
+    
+}
+
+.business .a > div {
+    border: 1px solid #ddd;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+
+.business .a h4 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #131313;
+}
+
+.business .a p {
+    line-height: 150%;
+    letter-spacing: 1.1px;
+    margin-top: 10px;
+}
+
+/* 지도 설정 */
+
+.map {
+    margin-top: 250px;
+    position: relative;
+
+
+}
+
+.map_notice {
+    width: 474px;
+    height: 762px;
+    background-color: #121212;
+    opacity: 0.8;
+    color: #fff;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    margin-top: 140px;
+    margin-left: 0px;
+    padding: 30px;
+
+}
+
+.map_notice h3 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.map_notice p {
+    margin-bottom: 40px;
+
+
+}
+
+.map_notice .map_btn {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.map_btn h3 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+
+
+/* footer 설정 */
+
+footer {
+    width: 100%;
+    height: 364px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+footer p {
+    color: #fff;
+
+}
+
+footer {
+    transform: translateX();
+}
+
+
+/* 반응형 웹 설정 */
+
+/* 1440px 이상 */
+@media (min-width: 1440px) {
+
+    header,
+    .title_btn,
+    .vid h3,
+    .business,
+    .playlist,
+    footer p,
+    .reservation_info_out {
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+
+
+   
+}
+
+
+@media (max-width: 1339px) {
+
+    body {
+        width: 375px;
+    }
+
+    header {
+        width: 375px; 
+    }
+
+}
